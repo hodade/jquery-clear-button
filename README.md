@@ -1,1 +1,32 @@
-どこでもクリアボターン！
+# jquery-input-clear
+
+## Adds a reset button on \<input type="text">.
+
+````Shell
+git clone https://github.com/qoozy/jquery-input-clear.git
+````
+
+Click the input area then the clear button will appear to reset the field.
+
+See example.
+
+![Screenshot](https://raw.githubusercontent.com/qoozy/jquery-input-clear/master/example/sample.png)
+
+## How to use
+
+### HTML
+````html
+<script src="jquery-input-clear.js"></script>
+
+<input type="text" id="with-clearbtn" value="Click me">
+````
+
+### Javascript
+````js
+<script type="text/javascript">
+    /**
+     * enabled jQuery Clear Button
+     */
+    $('#with-clearbtn').jQueryClearButton();
+</script>
+````

@@ -1,3 +1,4 @@
+;
 (function($) {
     //どこでもクリアボタン
     $.fn.jQueryClearButton = function(options){
@@ -9,16 +10,16 @@
 
         var obj = this;
         var obj_id = obj.attr('id');
-        var btn_class_name = "dokodemo-input-clear-" + obj_id;
+        var btn_class_name = 'dokodemo-input-clear-' + obj_id;
 
         //option
         var defaults = {
-            "always":false, //cleat button always display
-            "zindex":0,
-            "offset_right":15,
-            "button_width": 15,
-            "button_height": 18,
-            "color":"#aaa"
+            'always': false, //cleat button always display
+            'zindex': 0,
+            'offset_right': 15,
+            'button_width': 15,
+            'button_height': 18,
+            'color': '#aaa'
         };
         var setting = $.extend(defaults, options); //merge
 
@@ -36,24 +37,32 @@
 
         //button style
         btn.css({
-            "position":"absolute",
-            "display":"none",
-            "cursor":"pointer",
-            "z-index":setting.zindex,
-            "width":setting.button_width+"px",
-            "height":setting.button_height+"px",
-            "color":setting.color
+            'position': 'absolute',
+            'display': 'none',
+            'cursor': 'pointer',
+            'z-index': setting.zindex,
+            'width': setting.button_width + 'px',
+            'height': setting.button_height + 'px',
+            'color': setting.color
         });
 
         //ボタンの位置をセット
-        var offset_top = (btn_parent.height() / 2) - (setting.button_height / 2) + 2;
+        /* input要素がfloatしているとbtn_parentのheightが0になる。
+         * その場合はinput要素自体のheightをbtn_parentのheightとする
+         */
+        var btn_parent_height = btn_parent.height();
+        if (!btn_parent_height) {
+            btn_parent_height = obj.height();
+        }
+
+        var offset_top = (btn_parent_height / 2) - (setting.button_height / 2) + 2;
         btn.css({
-            "top":offset_top+"px",
-            "right":setting.offset_right+"px"
+            'top': offset_top + 'px',
+            'right': setting.offset_right + 'px'
         });
 
         //button event - click
-        btn.on("click", function() {
+        btn.on('click', function() {
             //clear
             obj.val('').focus();
 
@@ -63,7 +72,7 @@
         });
 
         //input event - input
-        obj.on("input", function(){
+        obj.on('input', function() {
             if (obj.val()) {
                 btn.show();
             } else {
@@ -79,7 +88,7 @@
         } else {
 
             //input event - focus
-            obj.on("focus", function(){
+            obj.on('focus', function() {
                 if (obj.val()) {
                     btn.show();
                 } else {
@@ -88,12 +97,12 @@
             });
 
             //input event - blur
-            obj.on("blur", function(){
-                setTimeout("$('." + btn_class_name + "').hide()",200);
+            obj.on('blur', function() {
+                setTimeout('$(\'.' + btn_class_name + '\').hide()', 200);
             });
 
             //input event - moseover
-            obj.on("mouseover", function(){
+            obj.on('mouseover', function() {
                 if (obj.val()) {
                     btn.show();
                 } else {
@@ -105,6 +114,6 @@
 
 
         //メソッドチェーン対応(thisを返す)
-        return(this);
+        return (this);
     };
 })(jQuery);
