@@ -1,0 +1,18 @@
+﻿*.diff
+
+#node, npm
+node_modules
+bower*
+
+#php
+vendor
+composer.lock
+
+#windows
+*コピー*
+
+#Others
+*.sublime-workspace
+*.sublime-project
+*.zip
+/**/*.log
