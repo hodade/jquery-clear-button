@@ -1,4 +1,4 @@
-# jquery-input-clear
+# jquery-clear-button
 
 ## Adds a reset button on \<input type="text">.
 
