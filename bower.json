@@ -1,0 +1,26 @@
+{
+  "name": "jquery-clear-button",
+  "main": "jquery-clear-button.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/hodade/jquery-clear-button",
+  "authors": [
+    "qoozy"
+  ],
+  "description": "jquery-clear-button adds a reset button on <input type=\"text\">.",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "jquery",
+    "reset",
+    "button"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -2,7 +2,7 @@
 
 #node, npm
 node_modules
-bower*
+bower_c*
 
 #php
 vendor
