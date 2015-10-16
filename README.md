@@ -16,7 +16,7 @@ See example.
 
 ### HTML
 ````html
-<script src="jquery-input-clear.js"></script>
+<script src="jquery-clear-button.js"></script>
 
 <input type="text" id="with-clearbtn" value="Click me">
 ````

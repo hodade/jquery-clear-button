@@ -1,14 +1,14 @@
 {
-  "name": "jquery-input-clear",
+  "name": "jquery-clear-button",
   "version": "1.0.2",
   "description": "jquery-input-clear adds a reset button on <input type=\"text\">.",
-  "main": "jquery-input-clear.js",
+  "main": "jquery-clear-button.js",
   "scripts": {
-    "preinstall": "npm i esformatter && npm i -g esformatter-dot-notation && npm i -g esformatter-literal-notation && npm i -g esformatter-remove-trailing-commas && npm i -g esformatter-jquery-chain && npm i -g esformatter-semicolons && npm i -g esformatter-braces && npm i -g esformatter-quotes"
+    "preinstall": "npm i esformatter && npm i esformatter-dot-notation && npm i esformatter-literal-notation && npm i esformatter-remove-trailing-commas && npm i esformatter-jquery-chain && npm i esformatter-semicolons && npm i esformatter-braces && npm i esformatter-quotes"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/qoozy/jquery-input-clear.git"
+    "url": "https://github.com/hodade/jquery-clear-button.git"
   },
   "author": "hodade",
   "license": "MIT",
