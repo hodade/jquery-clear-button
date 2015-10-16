@@ -1,0 +1,28 @@
+{
+  "name": "jquery-clear-button",
+  "version": "1.0.2",
+  "description": "jquery-clear-button adds a reset button on <input type=\"text\">.",
+  "main": "jquery-clear-button.js",
+  "scripts": {
+    "preinstall": "npm i esformatter && npm i esformatter-dot-notation && npm i esformatter-literal-notation && npm i esformatter-remove-trailing-commas && npm i esformatter-jquery-chain && npm i esformatter-semicolons && npm i esformatter-braces && npm i esformatter-quotes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hodade/jquery-clear-button.git"
+  },
+  "author": "hodade",
+  "license": "MIT",
+  "devDependencies": {
+    "esformatter-braces": "^1.2.1",
+    "esformatter-dot-notation": "^1.3.1",
+    "esformatter-jquery-chain": "^1.1.0",
+    "esformatter-literal-notation": "^1.0.1",
+    "esformatter-quotes": "^1.0.3",
+    "esformatter-remove-trailing-commas": "^1.0.1",
+    "esformatter-semicolons": "^1.1.1"
+  },
+  "dependencies": {},
+  "directories": {
+    "test": "tests"
+  }
+}
